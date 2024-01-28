@@ -5,3 +5,27 @@
     --color4: #a5c8ca;
     --color5: #586875;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    background-color: #586875;
+    color: #f6eddc;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: #f6eddc;
+    text-decoration: none;
+    padding: 5px;  
+  }
