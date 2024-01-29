@@ -13,20 +13,232 @@
 <body>
     <div class="container-fluid p-0">
         <div class="d-flex flex-sm-row vh-100">
+
             <nav
-                class="col-sm-3 d-flex flex-sm-column align-items-center justify-content-evenly bg-custom font-poppins h-100">
-                <div class="d-flex flex-sm-row">
-                    <img src="./imgs/Logo.svg" class="img-thumbnail navIcon"/>
+                class="col-sm-3 d-sm-flex flex-column align-items-center justify-content-start bg-custom font-poppins h-100">
+
+                <div class="d-flex flex-column pt-5 h-25">
+                    <img src="./imgs/Logo.svg" class="img-thumbnail navIcon" />
                     <a class="homeLink m-auto fs-5 w-2 bg-custom2">
                         PRPI
                     </a>
                 </div>
+                <div style=" font-size:small; display: flex; justify-content: center; align-items: center; text-align: center; width: 100%;">
+                    Pró-Reitoria de Pesquiva e Inovação.
+                </div>
                 
-                <ul id="navList" class="col-sm-3 d-flex flex-sm-column align-items-center text-nowrap">
+                <div class="searchBar">
+                    <input id="searchInputId1" class="searchInput" type="text" />
+                    <div id="searchIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                        <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </div>
+
+                </div>
+                <ul id="navList"
+                    class="d-flex mt-4 flex-column align-items-center justify-content-start text-nowrap h-75">
+                    <li class="navItem">
+                        <button id="bt1" class="navLink dropdown-bt">
+                            Página 1
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4" />
+                            </svg>
+                        </button>
+
+                        <div class="underDrop">
+                            <ul class="dropList">
+                                <li class="navLink">
+                                    <a>
+                                        Submenu1
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu2
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu3
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="navItem">
+                        <button id="bt2" class="navLink dropdown-bt">
+                            Página 2
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4" />
+                            </svg>
+                        </button>
+
+                        <div class="underDrop">
+                            <ul class="dropList">
+                                <li class="navLink">
+                                    <a>
+                                        Submenu1
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu2
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu3
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="navItem">
+                        <button id="bt2" class="navLink dropdown-bt">
+                            Página 2
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4" />
+                            </svg>
+                        </button>
+
+                        <div class="underDrop">
+                            <ul class="dropList">
+                                <li class="navLink">
+                                    <a>
+                                        Submenu1
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu2
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu3
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="navItem">
+                        <button id="bt2" class="navLink dropdown-bt">
+                            Página 2
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4" />
+                            </svg>
+                        </button>
+
+                        <div class="underDrop">
+                            <ul class="dropList">
+                                <li class="navLink">
+                                    <a>
+                                        Submenu1
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu2
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu3
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="navItem">
+                        <button id="bt2" class="navLink dropdown-bt">
+                            Página 2
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4" />
+                            </svg>
+                        </button>
+
+                        <div class="underDrop">
+                            <ul class="dropList">
+                                <li class="navLink">
+                                    <a>
+                                        Submenu1
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu2
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu3
+                                    </a>
+                                </li>
+                                <li class="navLink">
+                                    <a>
+                                        Submenu4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
                 </ul>
             </nav>
+            <button id="openMobileButton" class="mobileOpenbt bg-custom">
+                <svg style="width: 2rem; height: 2rem;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </button>
         </div>
+
     </div>
+
     <script src="./js/code.js"></script>
 </body>
 
