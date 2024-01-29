@@ -1,0 +1,36 @@
+body {
+    background-color: #f6eddc;
+    font-size: calc(1.275rem + .2vw);
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+article {
+    background-color: #ffffff;
+    border-radius: 0.8em;
+    padding: 1em;
+    padding-top: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    text-align: justify;
+    margin-top: 2.5em;
+}
+
+figure {
+    margin-top: 2em;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
