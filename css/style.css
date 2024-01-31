@@ -6,9 +6,11 @@
     --color3: #bdd6d2;
     --color4: #a5c8ca;
     --color5: #586875;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -36,6 +38,8 @@ a {
     font-family: 'Poppins', sans-serif !important;
 }
 nav{
+    height: 100%;
+    z-index: 1000;
     transition: 0.5s ease-in-out;
 }
 .openMobileMenu {
@@ -57,8 +61,10 @@ nav{
     margin: auto;
     background: none;
     border: none;
-    width: 5rem;
-    height: 5rem;
+    object-fit: cover;
+    object-position: top;
+    width: 3rem;
+    height: 3rem;
 }
 
 @keyframes rotateIcon {
@@ -95,9 +101,10 @@ nav{
 
 #navList {
     list-style-type: none;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -112,6 +119,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 0.5rem;
     width: 4rem;
     height: 2rem;
     border-radius: 0.5rem;
@@ -125,7 +133,9 @@ nav{
     list-style-type: none;
     padding: 0;
 }
-
+body{
+    background: var(--color2);
+}
 .underDrop {
     display: flex;
     flex-direction: column;
@@ -156,6 +166,7 @@ nav{
 }
 
 .mobileOpenbt {
+    z-index: 1001;
     display: none;
     outline: none;
     border: none;
@@ -168,10 +179,23 @@ nav{
 }
 .searchBar{
     display: flex;
+    flex-grow: 2;
+    padding-left: 2rem;
+    padding-right: 2rem;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 3rem;
+}
+
+.homeIcon{
+    padding-left: 2rem;
+    width: 20rem !important;
+}
+.desc{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 1rem;
+    font-size: smaller;
+    font-weight: 400;
 }
 #searchIcon{
     display: flex;
@@ -185,7 +209,8 @@ nav{
 }
 #searchInputId1{
     min-width: 2rem;
-    width: 10rem;
+    width: 100%;
+    padding: 0.5rem;
     background-color: none;
     height: 2rem;
     border: solid 1pt var(--color5);
@@ -193,4 +218,9 @@ nav{
     border-bottom-left-radius: 0.5rem;
     border-right: none;
     outline: none;
+}
+.middleContent{
+    display: flex;
+    width: 100%;
+    height: 100vh;
 }
